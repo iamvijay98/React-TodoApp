@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./components/Home";
+import AddTodo from "./components/AddTodo";
+import { Route, Routes } from "react-router-dom";
+import EditTodo from "./components/EditTodo";
+import TaskDetails from "./components/TaskDetails";
+import { DataProvider } from "./context/DataContext";
+import PageNotFound from "./components/PageNotFound";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/addTodo" element={<AddTodo />} />
+
+          <Route path="/edit" element={<EditTodo />} />
+
+          <Route path="/todo/:id" element={<TaskDetails />} />
+
+          <Route path="*" element={<PageNotFound />}/>
+        </Routes>
+      </div>
+    </DataProvider>
   );
-}
+};
 
 export default App;

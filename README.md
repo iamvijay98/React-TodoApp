@@ -40,15 +40,6 @@ By creating the "React Todo List with Local Storage" project using React and int
 
 # Screenshots:
 
-![localhost_3000_Todo-List-App](https://github.com/iamvijay98/Todo-List-App/assets/133564952/d0026531-1729-45e5-b31f-e35eb94da8a6)
-
-![localhost_3000_Todo-List-App (1)](https://github.com/iamvijay98/Todo-List-App/assets/133564952/363ef59b-1e23-45ac-9483-4c9028704b1c)
-
-![localhost_3000_Todo-List-App (2)](https://github.com/iamvijay98/Todo-List-App/assets/133564952/eea97b67-d87b-41cb-9bac-508cba5351c5)
-
-![localhost_3000_Todo-List-App (3)](https://github.com/iamvijay98/Todo-List-App/assets/133564952/56359db5-e646-4a4e-b16e-f52a3a16a14c)
-
-
 
 
 

@@ -8,7 +8,7 @@ const EditCatagoryBtn = ({ val,selectedCatagory, handleSelected }) => {
       (v) => v.catagory === val.catagory
     );
     setActiveCatagory(isSelected);
-  },[selectedCatagory]);
+  },[selectedCatagory,val.catagory]);
 
   return (
     <div>

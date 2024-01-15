@@ -33,5 +33,3 @@ useEffect(()=>{
 };
 
 export default CatagoryBtn;
-
-// "Home" || "Work" || "Personel" || "Health/Fitness" || "Education"  ||  "Gym"

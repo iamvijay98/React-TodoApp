@@ -39,7 +39,7 @@ const DisplayTodos = ({
   }, [data, search]);
 
   const handleTasksStatus = () => {
-    const parsePercentage = parseFloat(completedTask);
+    const parsePercentage = parseFloat(completedTask());
 
     if (parsePercentage === 0) {
       return "No tasks completed";

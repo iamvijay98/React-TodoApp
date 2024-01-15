@@ -10,7 +10,7 @@ const DisplayTodos = ({
   setDeleteNotification,
   setTaskDetails,
 }) => {
-  const [percentage, setPercentage] = useState(0);
+
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
@@ -24,10 +24,6 @@ const DisplayTodos = ({
       return 0;
     }
   };
-
-  useEffect(() => {
-    setPercentage(completedTask());
-  }, [data]);
 
   const handleSearch = (e) => {
     setSearch(e.target.value);
@@ -43,7 +39,7 @@ const DisplayTodos = ({
   }, [data, search]);
 
   const handleTasksStatus = () => {
-    const parsePercentage = parseFloat(percentage);
+    const parsePercentage = parseFloat(completedTask);
 
     if (parsePercentage === 0) {
       return "No tasks completed";
@@ -78,7 +74,7 @@ const DisplayTodos = ({
               <div className="  bg-purple-800 w-full h-2 mt-2 rounded-3xl">
                 <div
                   className="h-full rounded-3xl transition-all bg-purple-100"
-                  style={{ width: `${percentage}%` }}
+                  style={{ width: `${completedTask()}%` }}
                 ></div>
               </div>
             </div>

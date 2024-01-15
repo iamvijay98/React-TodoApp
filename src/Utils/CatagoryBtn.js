@@ -9,7 +9,7 @@ useEffect(()=>{
     v.catagory === val.catagory 
   ))
   setActiveCatagory(isSelected)
-})
+},[selectedCatagory,val.catagory])
 
   return (
     <li

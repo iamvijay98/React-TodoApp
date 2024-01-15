@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext} from "react";
 import Greeting from "../Utils/Greeting";
 import DisplayTodos from "../Utils/DisplayTodos";
 import { RxPlus } from "react-icons/rx";

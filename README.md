@@ -1,13 +1,12 @@
 # React Todo App 📝
 
-# https://reactify-todo-app.netlify.app/
+# https://reactify-todo-app.netlify.app/ 🔗
 
 The "React Todo List with Local Storage" project is a web-based task management application developed using React, designed to empower users to organize their tasks effectively while utilizing local storage for data persistence. This open-source project is hosted on Netlify.
 
 # Tech Stack💻:
 
 * React js
-   - Javascript
 * CSS3
 * Tailwind CSS
   

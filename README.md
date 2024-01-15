@@ -33,7 +33,7 @@ The "React Todo List with Local Storage" project is a web-based task management 
 
 * Task data is stored in the browser's local storage, ensuring that tasks persist even after the browser is closed or refreshed.
 
-**Responsive Design📤:**
+**Responsive Design📱:**
 
 * The application is designed to be responsive, delivering a seamless experience across various devices, including mobile phones and tablets.
 

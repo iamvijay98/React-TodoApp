@@ -31,7 +31,7 @@ The "React Todo List with Local Storage" project is a web-based task management 
   
 **Task Status✔️:**
 
-* Mark tasks as completed to easily track your progress and accomplishments.
+* Tasks can be marked as either complete or incomplete, allowing users to monitor their progress.
 
 **Task Deletion➿:**
 

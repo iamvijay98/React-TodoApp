@@ -26,7 +26,7 @@ const TaskDetails = () => {
 
             <div className=" mt-8">
               <div className="max-sm:text-base font-semibold flex gap-4 items-center border-b pt-4 pb-3">
-                <h2 className="text-left text-lg max-sm:text-base min-w-28">
+                <h2 className="text-left text-lg max-sm:text-sm min-w-28">
                   Task Name:
                 </h2>
                 <p className=" text-left text-base max-sm:text-sm font-normal">
@@ -35,7 +35,7 @@ const TaskDetails = () => {
               </div>
 
               <div className="max-sm:text-base font-semibold flex gap-4 items-center border-b pt-4 pb-3">
-                <h2 className="text-left text-lg max-sm:text-base min-w-28">
+                <h2 className="text-left text-lg max-sm:text-sm min-w-28">
                   Description:
                 </h2>
                 <p className="text-left text-base max-sm:text-sm font-normal">
@@ -44,7 +44,7 @@ const TaskDetails = () => {
               </div>
 
               <div className="text-xl max-sm:text-base font-semibold flex gap-4 items-center border-b pt-4 pb-3">
-                <h2 className=" text-left text-lg max-sm:text-base min-w-28">
+                <h2 className=" text-left text-lg max-sm:text-sm min-w-28">
                   Created:
                 </h2>
                 <p className="text-left text-base max-sm:text-sm font-normal">
@@ -53,7 +53,7 @@ const TaskDetails = () => {
               </div>
 
               <div className="max-sm:text-base font-semibold flex gap-4 items-center border-b pt-4 pb-3">
-                <h2 className="text-left text-lg max-sm:text-base min-w-28">
+                <h2 className="text-left text-lg max-sm:text-sm min-w-28">
                   Complete:
                 </h2>
                 <p className=" text-left text-base max-sm:text-sm font-normal">
@@ -62,14 +62,14 @@ const TaskDetails = () => {
               </div>
 
               <div className="max-sm:text-base font-semibold flex gap-4 items-center pt-4 pb-3">
-                <h2 className="text-left text-lg max-sm:text-base min-w-28">
+                <h2 className="text-left text-lg max-sm:text-sm min-w-28">
                   Catagory:
                 </h2>
 
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 max-sm:gap-2">
                   {details.catagory.map((val, index) => (
                     <p
-                      className="text-left text-base bg-purple-600 rounded-2xl px-3 py-1 max-sm:text-sm font-normal"
+                      className="text-left text-base bg-purple-600 border-purple-300 border-2 flex items-center gap-1 font-medium rounded-2xl px-3 py-1 max-sm:text-xs max-sm:py-0"
                       key={index}
                     >
                        <span className=" text-xl max-sm:text-lg">{val.emoji}</span> {val.catagory}

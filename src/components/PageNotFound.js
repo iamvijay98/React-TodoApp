@@ -10,7 +10,7 @@ const PageNotFound = () => {
         <img
           src={error404Img}
           alt="404ErrorImg"
-          className=" w-[450px] h-[450px]"
+          className=" w-[450px] max-sm:w-[290px] m-auto"
         />
 
         <p className=" text-lg text-gray-100 text-center font-medium mt-3">
@@ -19,7 +19,7 @@ const PageNotFound = () => {
 
         <div className=" text-center mt-4">
           <Link to={"/"}>
-            <button className="flex group items-center gap-2 m-auto py-3 px-5 text-purple-500 font-semibold bg-amber-50 rounded-full hover:bg-purple-900 duration-300 hover:text-white">
+            <button className="flex group items-center gap-2 m-auto py-3 px-5 text-purple-500 font-semibold bg-amber-50 rounded-full hover:bg-purple-900 duration-300 hover:text-white max-sm:text-sm">
             <FaArrowLeft className=" text-lg max-sm:text-base group-hover:-translate-x-1 duration-75"/> Go Back Home
             </button>
           </Link>

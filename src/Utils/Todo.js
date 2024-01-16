@@ -33,9 +33,9 @@ const Todo = ({
   });
 
   return (
-    <div className="flex justify-between gap-4 max-w-full items-center text-white bg-purple-800 rounded-2xl px-6 py-5 max-sm:px-3">
+    <div className="flex justify-between gap-4 max-w-full items-center text-white bg-purple-800 rounded-2xl px-6 py-5 max-sm:px-5">
       {val.check && (
-        <div className=" bg-purple-500 p-4 max-sm:p-2 rounded-2xl">
+        <div className=" bg-purple-500 p-4 max-sm:p-2 rounded-xl">
           <FaCheck className=" text-4xl" />
         </div>
       )}
@@ -49,14 +49,14 @@ const Todo = ({
           <h2
             className={`${
               val.check ? "line-through" : null
-            } font-semibold text-lg displayInput max-sm:text-sm`}
+            } font-bold text-lg displayInput max-sm:text-sm`}
           >
             {val.title}
           </h2>
           <p
             className={`${
               val.check ? "line-through" : null
-            } min-w-[110px] max-sm:text-xs`}
+            } min-w-[110px] max-sm:text-xs font-light`}
           >
             {val.currentTime}
           </p>
@@ -70,13 +70,13 @@ const Todo = ({
         </p>
 
         <div
-          className={`flex gap-3 items-center flex-wrap mt-3 ${
+          className={`flex gap-2 items-center flex-wrap mt-3 ${
             !val.catagory.length && "hidden"
           }`}
         >
           {val.catagory.map((c, index) => (
             <h4
-              className="bg-purple-600 rounded-2xl text-sm max-sm:text-xs px-3 py-1"
+              className="bg-purple-600 rounded-2xl text-sm max-sm:text-xs px-3 flex items-center font-medium gap-1 py-1 max-sm:py-0"
               key={index}
             >
               <span className=" text-xl max-sm:text-lg">{c.emoji}</span> {c.catagory}

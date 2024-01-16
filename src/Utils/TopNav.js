@@ -6,7 +6,7 @@ const TopNav = ({title}) => {
   const navigate = useNavigate();
 
   return (
-    <nav className=" py-7 max-sm:py-5 text-center text-3xl text-white flex items-center">
+    <nav className=" py-7 max-sm:py-5  text-center text-3xl text-white flex items-center">
       <div className=" rounded-lg p-1" title="Back" onClick={()=>navigate("/")}>
         <IoIosArrowBack className="text-4xl max-sm:text-2xl cursor-pointer" />
       </div>

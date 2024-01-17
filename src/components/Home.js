@@ -41,7 +41,7 @@ const Home = () => {
           />
 
           {addNotification && (
-            <div className=" min-sm:w-[230px] z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
+            <div className="z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
               <FaCheck className=" text-xl text-green-500" />
               <h2 className=" max-md:text-xs text-sm text-slate-600 font-semibold">
                 Added task - {addNotificationTitle}
@@ -50,7 +50,7 @@ const Home = () => {
           )}
 
           {editNotification && (
-            <div className=" min-sm:w-[230px] z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
+            <div className="z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
               <FaCheck className=" text-xl text-green-500" />{" "}
               <h2 className=" max-md:text-xs text-sm text-slate-600 font-semibold">
                 Task {editNotificationTitle} updated
@@ -59,7 +59,7 @@ const Home = () => {
           )}
 
           {deleteNotification && (
-            <div className=" min-sm:w-[230px] z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
+            <div className="z-10 px-3 py-2 rounded-md bg-white border-l-[5px] flex items-center gap-2 border-green-600 fixed bottom-8 left-[50%] -translate-x-[50%]">
               <FaCheck className=" text-xl text-green-500" />
               <h2 className="max-md:text-xs text-sm text-slate-600 font-semibold">
                 Deleted Task - {deleteNotificationTitle}

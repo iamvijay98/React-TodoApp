@@ -227,12 +227,12 @@ const FormInputs = ({
               descriptionCountError ? "border-red-500 border-2" : "border-none"
             }  w-full rounded-xl p-4 max-sm:p-3 mt-1 text-base max-sm:placeholder:text-sm h-48 max-sm:h-36 outline-none`}
           ></textarea>
-          <p className="text-red-500 text-base max-sm:text-xs mt-1">
+          <p className="text-red-500 text-base max-sm:text-xs">
             {descriptionCountError}
           </p>
         </div>
 
-        <div ref={catagoryRef}>
+        <div ref={catagoryRef} className=" mt-7 max-sm:mt-4">
           <label className="text-sm max-sm:text-xs text-purple-200">Category</label>
 
           <div

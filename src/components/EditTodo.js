@@ -127,7 +127,7 @@ const EditTodo = () => {
     } else {
       return;
     }
-  },[edit]);
+  }, [edit]);
 
   const handleSelected = (catagoryObj) => {
     const isCategorySelected = selectedCatagory.filter(
@@ -187,7 +187,9 @@ const EditTodo = () => {
             <form className="max-w-[600px] m-auto">
               <div>
                 <label
-                  className=" text-sm max-sm:text-sm text-purple-200"
+                  className={`text-sm max-sm:text-xs ${
+                    nameCountError ? "text-red-500" : "text-purple-200"
+                  } text-purple-200`}
                   htmlFor="taskName"
                 >
                   Edit Name
@@ -199,16 +201,19 @@ const EditTodo = () => {
                   onChange={handleEditTitle}
                   onKeyDown={handleKeyDown}
                   placeholder="Enter task name"
-                  className=" w-full h-14 max-sm:h-12 rounded-lg p-4 text-base mt-1 outline-none"
+                  className={`w-full h-14 max-sm:h-12 ${
+                    nameCountError ? "border-red-500 border-2" : "border-none"
+                  } rounded-xl p-4 text-base max-sm:placeholder:text-sm mt-1 outline-none`}
                 />
                 <p className="text-red-500 text-base max-sm:text-xs mt-1">
                   {nameCountError}
                 </p>
               </div>
-
-              <div className=" mt-7">
+              <div className=" mt-7 max-sm:mt-4">
                 <label
-                  className="text-sm max-sm:text-sm text-purple-200"
+                  className={`text-sm max-sm:text-xs ${
+                    descriptionCountError ? "text-red-500" : "text-purple-200"
+                  } text-purple-200`}
                   htmlFor="taskDescription"
                 >
                   Task Description
@@ -218,40 +223,44 @@ const EditTodo = () => {
                   value={edit.description}
                   onChange={handleEditDescription}
                   placeholder="Enter task description"
-                  className="resize-none w-full rounded-xl p-4 max-sm:p-3 mt-1 text-base max-sm:placeholder:text-base h-48 max-sm:h-36 outline-none"
+                  className={`resize-none ${
+                    descriptionCountError
+                      ? "border-red-500 border-2"
+                      : "border-none"
+                  }  w-full rounded-xl p-4 max-sm:p-3 mt-1 text-base max-sm:placeholder:text-sm h-48 max-sm:h-36 outline-none`}
                 ></textarea>
                 <p className="text-red-500 text-base max-sm:text-xs mt-1">
                   {descriptionCountError}
                 </p>
               </div>
 
-              <div ref={catagoryRef}>
+              <div ref={catagoryRef} className=" mt-7 max-sm:mt-4">
                 <label className="text-sm text-purple-200">Category</label>
 
                 <div
                   onClick={() => setCategoryOpen(!CategoryOpen)}
-                  className=" bg-white flex gap-10 cursor-pointer justify-between items-center max-sm:text-xs p-3 rounded-xl w-full min-h-16 min-sm:h-14 mt-1"
+                  className=" bg-white flex gap-7 cursor-pointer justify-between min-h-14 max-sm:min-h-12 px-3 py-3 max-sm:px-2 max-sm:py-2 items-center max-sm:text-xs rounded-xl w-full mt-1"
                 >
                   {edit.id && (
-                    <div className=" flex gap-3 flex-wrap items-center">
+                    <div className=" flex gap-2 flex-wrap items-center">
                       {edit.catagory.map((val, index) => (
-                        <p
+                        <div
                           key={index}
-                          className="flex gap-1 items-center bg-purple-500 text-white text-sm px-3 py-2 max-sm:py-1 rounded-lg"
+                          className=" bg-purple-500 text-white text-sm max-sm:text-xs flex items-center gap-1 px-3 py-2 max-sm:py-2 font-medium rounded-lg"
                         >
-                          <span className=" text-xl max-sm:text-lg">
+                          <span className=" text-xl max-sm:text-sm">
                             {val.emoji}
                           </span>
                           {val.catagory}
-                        </p>
+                        </div>
                       ))}
                     </div>
                   )}
                   <div className=" ms-auto">
                     {CategoryOpen ? (
-                      <IoIosArrowUp className=" text-2xl" />
+                      <IoIosArrowUp className=" text-2xl max-sm:text-xl" />
                     ) : (
-                      <IoIosArrowDown className=" text-2xl" />
+                      <IoIosArrowDown className=" text-2xl max-sm:text-xl" />
                     )}
                   </div>
                 </div>

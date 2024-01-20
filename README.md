@@ -60,6 +60,7 @@ By creating the "React Todo App with Local Storage" project using React and inte
 
 # Screenshots:
 
+![Group 2](https://github.com/iamvijay98/React-TodoApp/assets/133564952/75a908d5-e44c-40b5-9bea-29c305e8b30f)
 
 
 
